@@ -1,50 +1,63 @@
-📚 OOP1 - Practical Exercise: Library System
-This project is part of the Object-Oriented Programming (OOP1) course. It demonstrates basic OOP principles by implementing a simple library management system in Java.
+# 📚 OOP1 - Practical Exercise: Library System
 
-🧠 Description
-The system includes classes that model a library and its components:
+**English:**  
+Practical exercise for Object-Oriented Programming I – IFRS Osório.  
+Implementation of a simple library system using Java, applying inheritance, encapsulation, aggregation, and polymorphism.
 
-Book – Base class for all books.
+**Português:**  
+Exercício prático da disciplina Programação Orientada a Objetos I – IFRS Osório.  
+Implementação de um sistema básico de biblioteca em Java, utilizando herança, encapsulamento, agregação e polimorfismo.
 
-Publisher – Represents the publisher of a book.
+---
 
-PhysicalBook – Inherits from Book; represents a physical book.
+## 🧱 Project Structure
 
-Ebook – Inherits from Book; represents a digital version.
+- `Livro.java` – Classe base que representa um livro.
+- `Editora.java` – Classe agregada ao livro, com informações da editora.
+- `LivroFisico.java` – Subclasse de `Livro` com preço.
+- `Ebook.java` – Subclasse de `Livro` com preço e formato (ex: PDF).
+- `Biblioteca.java` – Classe que armazena os livros e permite listagens.
+- `MainClass.java` – Classe principal com objetos de teste e execução do programa.
 
-Library – Manages a collection of books and provides search functionality.
+---
 
-The project reinforces key OOP concepts such as inheritance, encapsulation, and polymorphism.
+## 🧪 Features & Behaviors
 
-✨ Features
-✅ Manage books (physical and digital)
+- Criação de livros físicos e eBooks com validações de preço.
+- Associação de editoras aos livros.
+- Listagens por:
+  - Ordem alfabética de títulos
+  - Livros publicados após 2015
+  - eBooks no formato PDF
 
-✅ Add/remove books from the collection
+---
 
-✅ Search books by:
+## 🚀 How to Run
 
-Title
+1. Clone o repositório:
 
-Author
+   ```bash
+   git clone https://github.com/ericfr1tzenvalle/OOP1-Practical-Exercise-Library.git
+   ```
 
-Year of publication
+2. Abra o projeto no **NetBeans** ou em outro IDE compatível com Java.
+3. Compile e execute a classe `MainClass`.
 
-Format (PDF, EPUB, etc.)
+---
 
-✅ Publisher info linked to each book
+## ⚠️ Error Handling
 
-⚙️ Requirements
-Java 8 or higher
+- **Preço inválido:**  
+  Atribuições de preços negativos disparam exceções `IllegalArgumentException`.
 
-NetBeans (recommended) or any Java-compatible IDE
+---
 
-🚀 Installation
-To get started locally:
+## 📁 Build & Ignore
 
-bash
-Copiar
-Editar
-git clone https://github.com/ericfr1tzenvalle/OOP1-Practical-Exercise-Library.git
-Open the project in NetBeans or your favorite Java IDE.
+Este projeto inclui um `.gitignore` que exclui arquivos de build, configurações privadas do NetBeans e diretórios desnecessários ao versionamento.
 
-Build and run the project.
+---
+
+## 📄 License
+
+Este projeto está licenciado sob a [MIT License](LICENSE).

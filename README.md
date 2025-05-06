@@ -1,32 +1,50 @@
-# OOP1 - Practical Exercise: Library System
+📚 OOP1 - Practical Exercise: Library System
+This project is part of the Object-Oriented Programming (OOP1) course. It demonstrates basic OOP principles by implementing a simple library management system in Java.
 
-This project is part of the Object-Oriented Programming (OOP1) course. It demonstrates the basic principles of object-oriented design by creating a simple library management system using Java.
-
-## Description
-
+🧠 Description
 The system includes classes that model a library and its components:
 
-- **Book**: Represents a book in the library.
-- **Publisher**: Represents the publisher of the book.
-- **PhysicalBook**: Inherits from `Book` and represents a physical book.
-- **Ebook**: Inherits from `Book` and represents an electronic version of a book.
-- **Library**: Manages the collection of books and allows searching, adding, and removing books.
+Book – Base class for all books.
 
-The purpose of this project is to practice fundamental OOP concepts like inheritance, encapsulation, and polymorphism.
+Publisher – Represents the publisher of a book.
 
-## Features
+PhysicalBook – Inherits from Book; represents a physical book.
 
-- Create and manage books (physical and e-books).
-- Add and remove books from the library.
-- Search for books by title or author.
-- Model relationships between books and publishers.
+Ebook – Inherits from Book; represents a digital version.
 
-## Requirements
+Library – Manages a collection of books and provides search functionality.
 
-- Java 8 or higher
+The project reinforces key OOP concepts such as inheritance, encapsulation, and polymorphism.
 
-## Installation
+✨ Features
+✅ Manage books (physical and digital)
 
-1. Clone this repository to your local machine.
-   ```bash
-   git clone https://github.com/ericfr1tzenvalle/OOP1-Practical-Exercise-Library.git
+✅ Add/remove books from the collection
+
+✅ Search books by:
+
+Title
+
+Author
+
+Year of publication
+
+Format (PDF, EPUB, etc.)
+
+✅ Publisher info linked to each book
+
+⚙️ Requirements
+Java 8 or higher
+
+NetBeans (recommended) or any Java-compatible IDE
+
+🚀 Installation
+To get started locally:
+
+bash
+Copiar
+Editar
+git clone https://github.com/ericfr1tzenvalle/OOP1-Practical-Exercise-Library.git
+Open the project in NetBeans or your favorite Java IDE.
+
+Build and run the project.
